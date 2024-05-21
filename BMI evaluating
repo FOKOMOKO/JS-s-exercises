@@ -1,0 +1,16 @@
+const getBmi = function (height, weight) {
+  return weight / (height * height);
+};
+
+function goodCondition(height, weight) {
+  const bmi = getBmi(height, weight);
+  console.log(bmi);
+  if (bmi < 25) {
+    console.log("good");
+  } else {
+    console.log("not good");
+  }
+}
+
+// we receive arguments, then it goes to function goodCondition, it then calls getBmi function, getBmi calculates BMI, then we compare the result to our reference
+goodCondition(1.73, 70.5);
