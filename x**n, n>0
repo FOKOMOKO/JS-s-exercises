@@ -1,0 +1,11 @@
+function pow(x, n) {
+  let result = x ** n;
+  alert(result);
+}
+let a = +prompt("напиши цифрру");
+let b;
+do {
+  b = +prompt("напиши степень больше 0");
+} while (b <= 0);
+pow(a, b);
+"Main thing to understand is that the variable 'b' must be declared before the do...while loop. Otherwise, we won't be able to use 'b' if we declare the variable within the loop (global and local variables, hello). Furthermore, the loop will keep bombarding the user with modal windows until they input a number greater than 0, which will set the condition to 'false'."
